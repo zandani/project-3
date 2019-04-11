@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Registration Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h3 class="title">THE CODE REVIEW</h3>
+  </header>
+  <div class="container">
+    <div class="intro">
+      <h3>Signup for our newsletter</h3>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
+    </div>
+    <div class="line1"></div>
+    <div class="line2"></div>
+
+    <form action="index.html" method="post">
+      <fieldset class="contact">
+        <legend>Contact Information</legend>
+
+        <div class="flex-container">
+          <label for="name">Full Name</label>
+          <input class="form" type="text" id="name" name="user_name" placeholder="required" required>
+        </div>
+        <div class="flex-container">
+          <label for="mail">Email Address</label>
+          <input class="form" type="email" id="mail" name="user_email" placeholder="required" required>
+        </div>
+        <div class="flex-container">
+          <label for="phone">Phone Number</label>
+          <input class="form" type="tel" id="phone" name="user_phone" placeholder="phone" required>
+        </div>
+        <div class="flex-container">
+          <label for="address">Street Address</label>
+          <input class="form" type="text" id="address" name="user_address" placeholder="address" required>
+        </div>
+        <div class="flex-container">
+          <label for="city">City</label>
+          <input class="form" type="text" id="city" name="user_city" placeholder="city" required>
+        </div>
+        <div class="flex-container">
+        <label for="provinces_territories">Provinces/Territories</label>
+        <select class="form" id="provinces_territories" name="user_provinces-territories">
+          <optgroup label="">
+            <option value="choose">choose one</option>
+          </optgroup>
+          <optgroup label="Provinces">
+            <option value="BC">British Columbia</option>
+            <option value="AB">Alberta</option>
+            <option value="SK">Saskatchewan</option>
+            <option value="MB">Manitoba</option>
+            <option value="ON">Ontario</option>
+            <option value="QC">Quebec</option>
+            <option value="NB">New Brunswick</option>
+            <option value="NS">Nova Scotia</option>
+            <option value="PE">Prince Edward Island</option>
+            <option value="NL">Newfoundland and Labrador</option>
+          </optgroup>
+          <optgroup label="Territories">
+            <option value="YT">Yukon</option>
+            <option value="NT">Northwest Territories</option>
+            <option value="NU">Nunavut</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="flex-container">
+        <label for="zip">Zip Code</label>
+        <input class="form" type="text" id="zip" name="user_zipcode" placeholder="zip code" required>
+      </div>
+        <div class="line3"></div>
+      </fieldset>
+      <fieldset class="newsletter">
+        <legend>Newsletter</legend>
+        <p>Select the newsletters you would like to recieve</p>
+        <input type="checkbox" id="html" value="html" name="news_html"><label for="html" class="light">HTML News</label><br>
+        <input type="checkbox" id="css" value="css" name="news_css"><label for="css" class="light">CSS News</label><br>
+        <input type="checkbox" id="javascript" value="javascript" name="news_javascript"><label for="javascript" class="light">Javascript News</label>
+
+        <p>Newsletter Format</p>
+        <input type="radio" id="html_format" value="html_format" name="format"><label for="html_format" class="light">HTML</label><br>
+        <input type="radio" id="text_format" value="text_format" name="format"><label for="text_format" class="light">Plain text</label><br><br>
+
+
+        <p>Other topics you'd like to hear about</p>
+        <textarea class="form" id="comments" name="user_comments" placeholder="Please leave a comments here." required></textarea><br>
+
+        <button class="btn" type="submit">Sign Up</button>
+      </fieldset>
+    </form>
+    <footer>
+      <p><small>&copy; The Code Review</small></p>
+    </footer>
+  </div>
+</body>
+
+</html>
